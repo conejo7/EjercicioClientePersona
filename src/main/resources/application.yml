@@ -4,9 +4,9 @@ spring:
   application:
     name: cliente-persona
   datasource:
-    url: jdbc:postgresql://localhost:5432/ejercicio
+    url: jdbc:postgresql://localhost:5433/ejercicio
     username: postgres
-    password: test
+    password: conejoej7
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

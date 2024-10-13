@@ -52,9 +52,9 @@ public class CustomerServiceImpl implements CustomerService {
     public Customer createClient(CreateCustomerRequest request) {
 
         if (request != null && StringUtils.hasLength(request.contrasena().trim())
-                && request.estado() != null  // Verifica que estado no sea nulo
+                && request.estado() != null
                 && request.personRequest() != null) {
-            // Buscar la persona en el repositorio por su identificación.
+
             Optional<Person> optionalPerson = personRepository.findById(request.personRequest().identificacion());
             Person person;
             if (optionalPerson.isPresent()) {
